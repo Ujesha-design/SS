@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Home Screen -->
+    <div class="home-screen" id="homeScreen">
+        <div class="home-content glass-effect">
+            <h1 class="wish main-title">Hello My Love ❤️</h1>
+            <p class="home-desc">I made a little surprise just for you...</p>
+            <button class="start-btn" id="startBtn">Open Surprise 🎁</button>
+        </div>
+    </div>
+
+    <div id="hearts-container"></div>
+
+    <div class="notification-container">
+        <div class="bell-wrapper" id="bellIcon">
+            <i class="fa-solid fa-bell bell-animation"></i>
+            <span class="badge" id="notificationBadge">1</span>
+        </div>
+        <div class="dropdown-menu glass-effect" id="notificationDropdown">
+            <div class="dropdown-header">
+                <h3>Surprises for You</h3>
+                <button class="close-btn-small" id="closeNotification"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="dropdown-list" id="randomTextList"></div>
+        </div>
+    </div>
+
+    <div class="envelope-wrapper" id="envelopeWrapper">
+        <div class="envelope" id="envelope">
+            <div class="flap" id="flap"></div>
+            <div class="pocket"></div>
+            <div class="letter-preview" id="letterPreview"></div>
+        </div>
+    </div>
+
+    <div class="overlay" id="letterOverlay">
+        <div class="letter-wrapper" id="letterMovement">
+            <div class="letter-paper" id="letterFold">
+                <button class="close-btn" id="closeLetter"><i class="fa-solid fa-xmark"></i></button>
+                <div class="fold-lines"></div>
+                <div class="text-content">
+                    <h1 class="wish">Happy Birthday, my everything. 💖</h1>
+                    <p class="message">You have no idea how much I love you… how every little thing about you drives me
+                        crazy in the best way.<br>Your laugh, your touch, your voice—everything about you is mine, and
+                        I never want to let go.<br>
+                        Today, I get to celebrate you, the man who owns my heart, my thoughts, my every waking
+                        moment.<br> Maybe I'm not perfect 100% but I'll be perfect for you, I'll make things right.<br>
+                        I want you to feel how deep my love goes, how much I crave you—not just today, but every day.
+                        <br>
+                        You’re not just my boyfriend… you’re my world, my obsession, my forever.You are the reason for
+                        my laugh. <br>
+                        Remember, no one could ever have you like I do. You’re mine, and I’ll make sure you never forget
+                        it. 💋🔥
+                        <br>Yours, always loving,<br>Ujesha.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
