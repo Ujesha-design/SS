@@ -25,9 +25,14 @@
     <div id="hearts-container"></div>
 
     <div class="notification-container">
-        <div class="bell-wrapper" id="bellIcon">
-            <i class="fa-solid fa-bell bell-animation"></i>
-            <span class="badge" id="notificationBadge">1</span>
+        <div style="display: flex; gap: 20px; align-items: center;">
+            <div class="bell-wrapper" id="bellIcon">
+                <i class="fa-solid fa-bell bell-animation"></i>
+                <span class="badge" id="notificationBadge">1</span>
+            </div>
+            <div class="home-wrapper" id="homeBtn" title="Go Home">
+                <i class="fa-solid fa-house"></i>
+            </div>
         </div>
         <div class="dropdown-menu glass-effect" id="notificationDropdown">
             <div class="dropdown-header">
@@ -72,6 +77,18 @@
     </div>
 
 
+
+    <!-- Quit Confirmation Overlay -->
+    <div class="overlay" id="quitOverlay">
+        <div class="glass-effect quit-modal">
+            <h2 style="color: #ff4757; font-family: 'Dancing Script', cursive; font-size: 32px; margin-top: 0;">Did you love the surprise? 💖</h2>
+            <p style="margin-bottom: 25px; font-weight: 600; color: var(--text-color); font-size: 18px;">Do you want to return to the start?</p>
+            <div class="quit-buttons">
+                <button id="quitYes" class="btn-yes">Yes</button>
+                <button id="quitNo" class="btn-no">No</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
